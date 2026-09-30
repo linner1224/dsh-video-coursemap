@@ -1,0 +1,6 @@
+# dsh-video-coursemap bundle patch：把 host 插件行插入 profile 的插件清单。
+# 用 plugin_manager 以 file: 规格安装后自动应用；不要再次在 profile patch
+# 里 insert 同一 id（重复 id 会让加载器报 duplicate loader entry id）。
+- insert:
+    - id: dsh-video-coursemap
+      name: 'dsh-video-coursemap'
