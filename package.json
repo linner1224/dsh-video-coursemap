@@ -1,23 +1,16 @@
 {
   "name": "dsh-video-coursemap",
-  "version": "0.2.0",
-  "description": "视频课程知识地图 Agent：定时观察浏览器前台窗口，识别视频课程并按学科分类，抓取 B 站简介/字幕/弹幕/评论，生成 Markdown + Mermaid 知识地图与 Word 学习手册。",
+  "version": "2.0.0",
+  "description": "视频课程知识地图 Agent 2.0：定时观察浏览器前台窗口实时检测 B 站视频课程，按关键词自动分类学科并抓取视频简介/字幕/弹幕/评论做知识总结，输出 Word 知识地图与学习手册",
   "type": "module",
   "main": "lib/index.js",
   "license": "MIT",
-  "keywords": [
-    "dsh",
-    "dsh-plugin",
-    "video",
-    "course",
-    "knowledge-map",
-    "bilibili",
-    "mindmap",
-    "word"
-  ],
-  "dsh": {
-    "bundle": {
-      "patch": "./cordis.patch.yml"
-    }
-  }
+  "files": ["lib", "cordis.patch.yml", "README.md", "scripts"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linner1224/dsh-video-coursemap.git"
+  },
+  "homepage": "https://github.com/linner1224/dsh-video-coursemap#readme",
+  "keywords": ["dsh", "dsh-plugin", "video", "bilibili", "knowledge-map", "course"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
 }
